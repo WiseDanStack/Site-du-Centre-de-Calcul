@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Acceuil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script>
+      str="Bienvenu au Centre de Calcul !!";
+      i=0;
+      dir = "D";
+      function f(){
+        t = setTimeout("f()",50);
+        document.fo.machaine.value = str.substring(0,i);
+        if (dir == "D"){
+          if(i<str.length+1)
+              i++;
+          else
+              dir ="G";
+        }
+        if(dir == "G"){
+          if(i>0)
+            i--;
+          else
+            dir="D";
+        }
+
+      }
+    </script>
+  </head>
+  <body onload="f()">
+    <div class="container-fluid">
+      <div class="row">
+        <!--- Barre de Navigation-->
+        <div class="navbar">
+            <div class="navbar-left">
+              <p><span>Cen</span><span>tre</span> <span>de</span> <span>Cal</span><span>cul</span></p>
+            </div>
+            <div class="navbar-right">
+              <a href="#" class="acceuil">Acceuil</a>
+              <a href="#">Members</a>
+              <a href="#">Contact</a>
+              <a href="#">À Propos</a>
+            </div></div>
+        <!---Fin de la Barre de Navigation-->
+        <div class="space"></div>
+        <!--- Debut du header -->
+          <form name="fo">
+            <input type="text" class="wise" name="machaine" >
+          </form>
+        <div class="space1"></div>
+        <!--- Fin du header-->
+        <!--- Debut du carrousel ---->
+ <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+   <div class="carousel-inner">
+     <div class="carousel-item active">
+       <img src="Bureau/images/football.jpg" class="d-block w-100" alt="Sport du centre de calcul">
+       <div class="carousel-caption d-none d-md-block">
+         <h5 class="police">Football</h5>
+         <p class="police">le sport par excellence du Centre de Calcul</p>
+       </div>
+     </div>
+     <div class="carousel-item">
+       <img src="Bureau/images/playstation.jpg" class="d-block w-100" alt="Le jeux par excellence">
+       <div class="carousel-caption d-none d-md-block">
+         <h5 class="police">Playstation</h5>
+         <p class="police">le jeux vidéo qui fait le plus parler les membres </p>
+       </div>
+     </div>
+     <div class="carousel-item">
+       <img src="Bureau/images/etudes.jpg" class="d-block w-100" alt="c'est d'abord l'objectif">
+       <div class="carousel-caption d-none d-md-block">
+         <h5 class="police">Études</h5>
+         <p class="police">Que des génies au Centre de Calcul</p>
+       </div>
+     </div>
+     <div class="carousel-item">
+       <img src="Bureau/images/fantasme.jpg" class="d-block w-100" alt="rien de mieux que des fantasmes">
+       <div class="carousel-caption d-none d-md-block">
+         <h5 class="police">Fantasmes</h5>
+         <p class="police">Ici tous le monde à ces fantasmes dans cette communautée</p>
+       </div>
+     </div>
+     <div class="carousel-item">
+       <img src="Bureau/images/détractages.jpg" class="d-block w-100" alt="rien à faire">
+       <div class="carousel-caption d-none d-md-block">
+         <h5 class="police">Détractages</h5>
+         <p class="police">Normale que des talentueux au centre de calcul</p>
+       </div>
+     </div>
+     <div class="carousel-item">
+       <img src="Bureau/images/connerie.jpg" class="d-block w-100" alt="que de l'amusement">
+       <div class="carousel-caption d-none d-md-block">
+         <h5 class="police">Conneries</h5>
+         <p class="police">Ici c'est la meilleur lorsque l'ennui prend le decu</p>
+       </div>
+     </div>
+  </div>
+</div>
+<div class="presentation">
+  <h2 class="titre">Centre de Calcul?</h2>
+  <p class="intro">le <span>cen</span><span>tre</span> <span>de</span> <span>cal</span><span>cul</span> est en faite
+  Une communauté diversifiée entre autre d'étudiant(e)s de la faculté de Sciences au Centres d'intérêts communs
+et aux goût plus au moins communs ( l'histoire de Flore &#128517;)
+</p>
+<div class="space4"></div>
+<div class="row">
+  <div class="col-sm-6 mb-3 mb-sm-0">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Membres</h5>
+        <p class="card-text">Ici il s'agit des vrais Membres , des confirmés , ceux qui sont près à defendre les couleurs du centre du calcul
+        Car être membre du Centre de Calcul c'est avant tout un honneur et un prestige</p>
+        <a href="#" class="btn btn-primary">Membres</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Programme des Activitées</h5>
+        <p class="card-text">Grande communautée de ce niveau , le Centre de Calcul organise des activitées de haute Envergures chaque semaine!!</p>
+        <a href="#" class="btn btn-primary">Voir</a>
+      </div>
+    </div>
+  </div>
+  <div class="space4"></div>
+</div>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>

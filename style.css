@@ -1,0 +1,85 @@
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.navbar{
+  display: flex;
+  justify-content:space-between;
+  background-color: black;
+  font-size: 10 px;
+  color: lightblue;
+}
+.navbar > .navbar-right >a{
+  text-decoration: none;
+  color:lightblue;
+  margin-right: 15px;
+}
+.navbar > .navbar-right >a:hover{
+  background-color: lightblue;
+  color: black;
+  padding:5px;
+  border-radius: 10px;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: 1ms;
+}
+.navbar > .navbar-right > .acceuil{
+  background-color: lightblue;
+  color: black;
+  padding:5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/************************** Header *****************************/
+.space{
+  height: 30px;
+  width: 100%;
+}
+.wise{
+  background-color: lightblue;
+  color: black;
+  height: 80px;
+  width: 100%;
+  border-radius: 20px;
+  margin-top: 30px;
+  padding-left: 50px;
+  padding: 20px;
+  font-size: 70px;
+}
+/**********************Fin du Header*******************************************************/
+.space1{
+  height: 15px;
+  width: 100%;
+}
+.police{
+  font-size: 30px;
+  color: yellow;
+}
+.presentation{
+  margin-top: 10px;
+  padding:20px;
+  text-align: center;
+  font-size: 30px;
+}
+.space4{
+  height: 50px;
+  width: 100%;
+}
+.card{
+  background-color: lightblue;
+}
+.space4{
+  height: 25px;
+  width: 100%;
+}
+
+.footer{
+  padding-top: 30px;
+  background-color: black;
+  height: 500px;
+  width: 100%;
+  color: white;
+  font-size: 20px;
+}

@@ -257,3 +257,10 @@ nav ul li a:hover{
     -webkit-text-stroke: 2px rgb(255, 94, 0);
     color: rgb(255, 94, 0);
 }
+footer {
+    margin-top: 60px;
+    font-family: 'Playfair Display', serif;
+}
+.w{
+    color: rgb(255, 94, 0);
+}

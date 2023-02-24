@@ -1,4 +1,4 @@
-let str='Bienvenu au Centre de Calcul !!';
+let str='Bienvenu au Centre de Calcul';
 i=0;
 dir = "D";
 function f(){

@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:ital,wght@1,500&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:ital,wght@1,500&family=Poppins&family=Prata&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Prata', serif;
+
+}
+html{
+    --res: calc(0.01 * 10vmin);
+}
+
+/************************* DEBUT DE LA NAVBAR **************************************/
+
+nav {
+    background-color: black;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: white;
+    font-size: calc(64 * var(--res));
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-family: 'Playfair Display', serif;
+}
+a.active1{
+    color: rgb(255, 94, 0);
+    text-decoration: none;
+}
+nav ul li a:hover{
+    text-decoration: none;
+    color: rgb(255, 94, 0);
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+.logo{
+    font-family: 'Playfair Display', serif;
+}
+#check {
+    display: none;
+}
+.gold{
+    color: #FFE55C;
+}
+.maaron {
+    color: #582900;
+}
+.de {
+    color: rgb(255, 94, 0);
+}
+@media (max-width:900px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover ,a.active1{
+        color: rgb(255, 94, 0);
+        background: none;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+/************************************************ FIN DE LA NAVBAR ***************************/
+.introduction{
+    height: 400px;
+    width: 100%;
+    background-image: url(imagesMembres/membre.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0,0,0.8);
+}
+.des {
+    font-size: calc(64 * var(--res));
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.txt{
+    font-size: calc(64 * var(--res));
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+    color: white;
+}
+.mérite{
+    margin-top: 50px;
+    text-align: center;
+
+}
+.sopate{
+    font-size: 50px;
+    height: 20px;
+}
+
+.hr1{
+    border: 5px solid  #582900;
+    width: 600px;
+    opacity: 1;
+}
+.hr2{
+    border: 5px solid #FFE55C;
+    width: 800px;
+    opacity: 1;
+}
+@media screen (max-width:900px) {
+    .hr1{
+        width:100px;
+        border: 2px solid  #582900;
+        opacity: 1;
+    }
+    .hr2{
+        width: 150px;
+        border: 2px solid  #FFE55C;
+        opacity : 1;
+    }
+    
+}
+@media screen (max-width:30rem){
+    .hr1{
+        width:0;
+        border: 1px solid  #582900;
+        opacity: 1;
+    }
+    .hr2{
+        width: 0;
+        border: 1px solid  #FFE55C;
+        opacity : 1;
+    }
+    
+}
+/***********************************************************************************************************/
+/****************** carrouselle des membres ********************************************************************/
+#version{
+    width: 1000px;
+    height: 400px;
+    margin: 50px auto;
+}
+.maClasse{
+    display: inline-block;
+    vertical-align: top;
+}
+.card1 {
+    margin: 20px;
+    border: none;
+    border-radius: 15px;
+    background: rgb(255,229,92);
+    background: radial-gradient(circle, rgba(255,229,92,1) 34%, rgba(88,41,0,1) 96%);
+    box-shadow: 14px 18px 43px 0px rgba(0,0,0,0.77);
+    -webkit-box-shadow: 14px 18px 43px 0px rgba(0,0,0,0.77);
+    -moz-box-shadow: 14px 18px 43px 0px rgba(0,0,0,0.77);
+    transition: all .3s;
+}
+.card1:hover {
+    background: white;
+    box-shadow: none;
+    transition: all .3s;
+}
+@media screen (max-width:600px){
+    .card1{
+        margin-left:50px;
+    }
+    
+}
+.btn1{
+    margin-top: 5px;
+    background-color: #AE002B;
+    color: white;
+}
+.btn2{
+    margin-top: 5px;
+    background-color: #DDA8FA;
+    color: white;
+}
+.btn3{
+    margin-top: 5px;
+    background-color: #00FA32;
+    color: white;
+}
+.btn4{
+    margin-top: 5px;
+    background-color: #00B5FA;
+    color: white;
+}
+.btn5{
+    margin-top: 5px;
+    background-color: #6e3300;
+    color: white;
+}
+.btn6{
+    margin-top: 5px;
+    background-color: yellow;
+    color: white;
+}
+.btn7{
+    margin-top: 5px;
+    background-color: blue;
+    color: white;
+}
+.btn8{
+    margin-top: 5px;
+    background-color: #DEDDBF;
+    color: white;
+}
+.btn9{
+    margin-top: 5px;
+    background-color: blue;
+    color: white;
+}
+.btn10{
+    margin-top: 5px;
+    background-color: orange;
+    color: white;
+}
+.btn11{
+    margin-top: 5px;
+    background-color: #C9DEBF;
+    color: white;
+}
+.txt1{
+    font-size: calc(64 * var(--res));
+    font-weight: bold;
+    text-align: center;
+    padding-top: 30px;
+    color: black;   
+}
+footer {
+    margin-top: 60px;
+}
+.w{
+    color: rgb(255, 94, 0);
+}

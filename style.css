@@ -1,19 +1,72 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:ital,wght@1,500&family=Poppins&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:ital,wght@1,500&family=Poppins&family=Prata&display=swap');
 body{
-    margin: 0;
     padding: 0;
+    margin: 0;
+    list-style: none;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Prata', serif;
+
 }
+html{
+    --res: calc(0.01 * 10vmin);
+}
+
+/************************* DEBUT DE LA NAVBAR **************************************/
+
 nav {
-    background: #000;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
+    background-color: black;
+    height: 80px;
+    width: 100%;
+    transition: all .3s;
+
+}
+label.logo {
+    color: white;
+    font-size: calc(64 * var(--res));
+    line-height: 40px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
     font-family: 'Playfair Display', serif;
+}
+a.active{
+    color: rgb(255, 94, 0);
+    text-decoration: none;
+}
+nav ul li a:hover{
+    text-decoration: none;
+    color: rgb(255, 94, 0);
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+.logo{
+    font-family: 'Playfair Display', serif;
+}
+#check {
+    display: none;
 }
 .gold{
     color: #FFE55C;
@@ -24,47 +77,75 @@ nav {
 .de {
     color: rgb(255, 94, 0);
 }
-nav .mainMenu {
-    display: flex;
-    list-style: none;
-}
-nav .mainMenu li a {
-    display: inline-block;
-    padding: 13px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 1rem;
-    transition: 0.2s ease;
-}
-nav .mainMenu li a:hover {
-    color: rgb(255, 94, 0);
-}
-
-/********* FIN DE La NAVBAR****************************/
-.before{
-}
-.before input{
-    font-size: 300px;
+@media (max-width:900px){
+    label.logo{
+        font-size: calc(64 * var(--res));
+        padding-left: 5px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    .checkbtn{
+        display: block;
+        z-index: 5;
+        transition: all 0.2s;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover ,a.active{
+        color: rgb(255, 94, 0);
+        background: none;
+    }
+    #check:checked ~ ul{
+        left: 0;
+        z-index: 5;
+    }
 }
 .wisedan{
-    height:100px;
-    color:  rgba(0,0,0,0.5);
-    width: 200px;
-    align-items: center;
-    padding: 30px;
-    border:none;
-    font-size: 30px;
-    flex-wrap: wrap;
-    transition: 0.5s;
-    font-size: 2rem;
+    font-size: calc(64 * var(--res));
+}
+/************************************************ FIN DE LA NAVBAR ***********************************/
+/******************* DEBUT DE L'INPUT ****************************************/
+
+.wisedan{
+    border: none;
+    color:#582900;
+    font-size: calc(64 * var(--res));
+    margin-left: calc(80 * var(--res));;
+    padding-top: 50px;
+    width: 100%;
 }
 .wisedan:hover{
     -webkit-text-stroke: 2px rgb(255, 94, 0);
     color: rgb(255, 94, 0);
 }
-/*********************************************************************/
-/************************* REDIMENTIONNONS LE CAROUSSELLE***********************/
+@media screen (min-width:800px){
+    .wisedan{
+        margin-left: 100px;
+    }
+    
+}
+.espace{
+    height: 15px;
+    width: 100%;
+    color: white;
+    background-color: white;
+}
 .wise .carousel-item{
     min-height: 60vh;
     background-position: center;
@@ -89,23 +170,19 @@ nav .mainMenu li a:hover {
     top: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
-}   opacity: 0;
-
-}
-.testons
-{
-    color: rgb(255,
 }
 .wise .carousel-item h2{
-    font-size: 80px;
+    font-size: calc(64 * var(--res));
     color: #ffffff;
     margin: 0 0 10px;
     opacity: 0;
 }
 .wise .carousel-item p{
-    font-size: 30px;
+    font-size: calc(64 * var(--res));
     margin: 0;
     color: #eeeeee;
+    opacity: 0;
+
 }
 .wise .carousel-item.active h2{
     animation: fadeInLeft 0.5s ease forwards;
@@ -134,10 +211,11 @@ nav .mainMenu li a:hover {
         transform: translateX(0px);
     }
 }
-/*************************** FIN DU CARROUSEL ***************************************/
+/************************* Fin de l'input et de la responsivité *************************************************/
+/************************************************ Fin REDIMENSIONNEMENT DU CAROUSSELLE ****************************************/
 .merci {
     -webkit-text-stroke: 2px blue;
-    color: white;
+    color: blue;
 }
 .localisation{
     margin-top: 150px;
@@ -164,7 +242,7 @@ nav .mainMenu li a:hover {
     
 }
 .localisation a:hover{
-    color: #E6BC35;
+    color: rgb(255, 94, 0);
 }
 .wise3{
     padding-top: 40px;
@@ -176,28 +254,16 @@ nav .mainMenu li a:hover {
 }
 .wise1{
     -webkit-text-stroke: 2px rgb(255, 94, 0);
-    color:rgb(255,94,0);
+    color: rgb(255, 94, 0);
 }
 .daniel{
     -webkit-text-stroke: 2px rgb(255, 94, 0);
     color: rgb(255, 94, 0);
 }
-.position li {
-    display: inline-block;
-    list-style: none;
-    font-size: 15px;
-    justify-content: space-between;
-
-}
 footer {
-    background-color: black;
-    margin-top: 80px;
+    margin-top: 60px;
+    font-family: 'Playfair Display', serif;
 }
-footer a{
-    text-decoration: none;
-    color: white ;
-}
-
-footer a:hover {
+.w{
     color: rgb(255, 94, 0);
 }

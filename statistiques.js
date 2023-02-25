@@ -1,4 +1,4 @@
-    var wise = document.getElementById("content"); 
+   /* var wise = document.getElementById("content"); 
     var dan = document.getElementById("ham"); 
 
 
@@ -9,3 +9,4 @@
     function p() {
             document.getElementById("content").style.visibility = "visible";
         }
+        */

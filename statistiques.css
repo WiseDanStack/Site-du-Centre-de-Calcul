@@ -19,13 +19,14 @@ nav {
     background-color: black;
     height: 80px;
     width: 100%;
+    transition: all .3s;
 }
 
 label.logo {
     color: white;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
+    font-size: calc(64 * var(--res));
+    line-height: 40px;
+    padding: 10px;
     font-weight: bold;
 }
 
@@ -78,14 +79,15 @@ nav ul li a:hover{
 }
 @media (max-width:900px){
     label.logo{
-        font-size: 30px;
-        padding-left: 50px;
+        font-size: calc(64 * var(--res)); 
+        padding-left: 5px;
     }
     nav ul li a{
         font-size: 16px;
     }
     .checkbtn{
         display: block;
+        z-index: 5;
     }
     ul{
         position: fixed;
@@ -111,6 +113,7 @@ nav ul li a:hover{
     }
     #check:checked ~ ul{
         left: 0;
+        z-index: 5;
     }
     .wise {
         display: none;
@@ -192,4 +195,7 @@ nav ul li a:hover{
 footer {
     margin-top: 60px;
     font-family: 'Playfair Display', serif;
+}
+.w{
+    color: rgb(255, 94, 0);
 }
